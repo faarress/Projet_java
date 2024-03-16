@@ -86,4 +86,30 @@ public class Freelancer extends Utilisateur {
     public int hashCode() {
         return Objects.hash(super.hashCode(), idFreelancer, competences, domaineExpertise, tauxHoraire, certifications, niveauExperience);
     }
+
+
+    // CRUD pour les compétences
+    public void ajouterCompetence(String competence) {
+        competences.add(competence);
+    }
+
+    public void supprimerCompetence(String competence) {
+        competences.remove(competence);
+    }
+
+    public void modifierCompetence(String ancienneCompetence, String nouvelleCompetence) {
+        int i = competences.indexOf(ancienneCompetence);
+        if (i != -1) {
+            competences.set(index, nouvelleCompetence);
+        }
+    }
+
+    // CRUD pour les certifications
+    public void ajouterCertification(String certification) {
+        certifications.add(certification);
+    }
+
+    public void supprimerCertification(String certification) {
+        certifications.remove(certification);
+    }
 }
