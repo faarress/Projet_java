@@ -69,4 +69,21 @@ public class Freelancer extends Utilisateur {
     public void setNiveauExperience(NiveauExperience niveauExperience) {
         this.niveauExperience = niveauExperience;
     }
+
+    @Override
+    public String toString() {
+        return "Freelancer{" +
+                "idFreelancer=" + idFreelancer +
+                ", competences=" + competences +
+                ", domaineExpertise='" + domaineExpertise + '\'' +
+                ", tauxHoraire=" + tauxHoraire +
+                ", certifications=" + certifications +
+                ", niveauExperience=" + niveauExperience +
+                "} " + super.toString();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), idFreelancer, competences, domaineExpertise, tauxHoraire, certifications, niveauExperience);
+    }
 }
