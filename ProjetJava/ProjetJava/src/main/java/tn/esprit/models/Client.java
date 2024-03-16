@@ -49,4 +49,19 @@ public class Client extends Utilisateur {
     public void setHistoriqueCollab(List<String> historiqueCollab) {
         this.historiqueCollab = historiqueCollab;
     }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "idClient=" + idClient +
+                ", nomEntreprise='" + nomEntreprise + '\'' +
+                ", domaineActivite='" + domaineActivite + '\'' +
+                ", historiqueCollab=" + historiqueCollab +
+                "} " + super.toString();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), idClient, nomEntreprise, domaineActivite, historiqueCollab);
+    }
 }
