@@ -1,75 +1,81 @@
 package tn.esprit.models;
 
+import java.util.Date;
+
 public class Utilisateur {
-        private int id, age;
-        private String nom, prenom;
-    protected String nomUtilisateur, motDePasse;
-        public Utilisateur(int id, int age, String nom, String prenom, String nomUtilisateur, String motDePasse) {
-            this.id = id;
-            this.age = age;
-            this.nom = nom;
-            this.prenom = prenom;
-            this.nomUtilisateur = nomUtilisateur;
-            this.motDePasse = motDePasse;
-        }
-
-        public Utilisateur(int age, String nom, String prenom) {
-            this.age = age;
-            this.nom = nom;
-            this.prenom = prenom;
-        }
-
-        public Utilisateur(String nomUtilisateur, String motDePasse) {
-
-        }
-
-        public int getId() {
-            return id;
-        }
-
-        public void setId(int id) {
-            this.id = id;
-        }
-
-        public int getAge() {
-            return age;
-        }
-
-        public void setAge(int age) {
-            this.age = age;
-        }
-
-        public String getNom() {
-            return nom;
-        }
-
-        public void setNom(String nom) {
-            this.nom = nom;
-        }
-
-        public String getPrenom() {
-            return prenom;
-        }
-
-        public void setPrenom(String prenom) {
-            this.prenom = prenom;
-        }
-
-        @Override
-        public String toString() {
-            return "Personne{" +
-                    "id=" + id +
-                    ", age=" + age +
-                    ", nom='" + nom + '\'' +
-                    ", prenom='" + prenom + '\'' +
-                    '}';
-        }
+    private int idUser;
+    private String nom;
+    private String prenom;
+    private String adresseMail;
+    private String password;
+    private Date dateNaissance;
+    private Date dateCreationCompte;
 
 
-
-
-
-
+    public Utilisateur(int idUser, String nom, String prenom, String adresseMail, String password, Date dateNaissance, Date dateCreationCompte) {
+        this.idUser = idUser;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.adresseMail = adresseMail;
+        this.password = password;
+        this.dateNaissance = dateNaissance;
+        this.dateCreationCompte = dateCreationCompte;
     }
 
 
+    public int getIdUser() {
+        return idUser;
+    }
+
+    public void setIdUser(int idUser) {
+        this.idUser = idUser;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
+    public String getAdresseMail() {
+        return adresseMail;
+    }
+
+    public void setAdresseMail(String adresseMail) {
+        this.adresseMail = adresseMail;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Date getDateNaissance() {
+        return dateNaissance;
+    }
+
+    public void setDateNaissance(Date dateNaissance) {
+        this.dateNaissance = dateNaissance;
+    }
+
+    public Date getDateCreationCompte() {
+        return dateCreationCompte;
+    }
+
+    public void setDateCreationCompte(Date dateCreationCompte) {
+        this.dateCreationCompte = dateCreationCompte;
+    }
+}
