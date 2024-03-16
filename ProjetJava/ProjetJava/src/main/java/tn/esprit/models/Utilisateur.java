@@ -78,4 +78,22 @@ public class Utilisateur {
     public void setDateCreationCompte(Date dateCreationCompte) {
         this.dateCreationCompte = dateCreationCompte;
     }
+
+    @Override
+    public String toString() {
+        return "Utilisateur{" +
+                "idUser=" + idUser +
+                ", nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", adresseMail='" + adresseMail + '\'' +
+                ", password='" + password + '\'' +
+                ", dateNaissance=" + dateNaissance +
+                ", dateCreationCompte=" + dateCreationCompte +
+                '}';
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(idUser, nom, prenom, adresseMail, password, dateNaissance, dateCreationCompte);
+    }
 }
