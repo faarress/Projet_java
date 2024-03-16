@@ -64,4 +64,19 @@ public class Client extends Utilisateur {
     public int hashCode() {
         return Objects.hash(super.hashCode(), idClient, nomEntreprise, domaineActivite, historiqueCollab);
     }
+
+    public void ajouterCollaboration(String collaboration) {
+        historiqueCollab.add(collaboration);
+    }
+
+    public void supprimerCollaboration(String collaboration) {
+        historiqueCollab.remove(collaboration);
+    }
+
+    public void modifierCollaboration(String ancienneCollaboration, String nouvelleCollaboration) {
+        int index = historiqueCollab.indexOf(ancienneCollaboration);
+        if (index != -1) {
+            historiqueCollab.set(index, nouvelleCollaboration);
+        }
+    }
 }
