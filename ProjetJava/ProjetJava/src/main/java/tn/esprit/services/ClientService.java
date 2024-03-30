@@ -1,5 +1,6 @@
 public class ClientService {
-    private ClientDao clientDao = new ClientDao();
+    private
+    ClientDao clientDao = new ClientDao();
 
     public void ajouterCollaboration(int idClient, String collaboration) {
         Client client = clientDao.getClient(idClient);

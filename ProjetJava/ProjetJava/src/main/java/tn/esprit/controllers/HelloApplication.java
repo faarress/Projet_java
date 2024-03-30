@@ -1,4 +1,4 @@
-package com.example.projet_freelance;
+package tn.esprit.controllers;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

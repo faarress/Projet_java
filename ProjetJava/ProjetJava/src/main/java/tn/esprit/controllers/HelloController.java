@@ -1,13 +1,13 @@
-package com.example.projet_freelance;
+package tn.esprit.controllers;
 
-import entities.Tache;
+import tn.esprit.models.Tache;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import service.CRUDTache;
-import utils.MaConnexion;
+import tn.esprit.services.CRUDTache;
+import tn.esprit.Utils.MaConnexion;
 
 import java.sql.*;
 

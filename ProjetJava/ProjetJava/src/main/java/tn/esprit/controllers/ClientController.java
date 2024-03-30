@@ -1,3 +1,6 @@
+package tn.esprit.controllers;
+import tn.esprit.services.ClientService;
+
 public class ClientController {
     private ClientService clientService = new ClientService();
 

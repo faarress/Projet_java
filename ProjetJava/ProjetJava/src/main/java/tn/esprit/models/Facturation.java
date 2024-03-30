@@ -1,4 +1,4 @@
-package entities;
+package tn.esprit.models;
 
 public class Facturation {
     private int id;

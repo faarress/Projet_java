@@ -1,9 +1,8 @@
-package service;
+package tn.esprit.services;
 
-import entities.Facturation;
-import entities.Tache;
-import utils.MaConnexion;
-
+import tn.esprit.models.Facturation;
+import tn.esprit.models.Tache;
+import tn.esprit.Utils.MaConnexion;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;

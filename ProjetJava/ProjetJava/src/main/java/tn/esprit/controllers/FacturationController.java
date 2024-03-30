@@ -1,13 +1,13 @@
-package com.example.projet_freelance;
-import entities.Facturation;
+package tn.esprit.controllers;
+import tn.esprit.models.Facturation;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import service.CRUDFacturation;
-import service.CRUDTache;
-import utils.MaConnexion;
+import tn.esprit.services.CRUDFacturation;
+import tn.esprit.services.CRUDTache;
+import tn.esprit.Utils.MaConnexion;
 
 import java.sql.*;
 
